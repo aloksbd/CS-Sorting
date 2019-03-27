@@ -4,8 +4,8 @@ var ctx = canvas.getContext("2d");
 
 var readyButton = document.getElementById("readyButton");
 
-var width = 1000;
-var height = 500;
+var width = 400;
+var height = 200;
 
 canvas.width = width;
 canvas.height = height;
@@ -37,7 +37,7 @@ for(i = 0; i < points.length; i++){
 
 readyButton.onclick = function(){
     console.log('start');
-    var bub = BubbleSort(points)
+    var bub = InsertionSort(points)
     setInterval(function(){
         console.log('....................',points.length);
         bub.update();
@@ -49,6 +49,6 @@ readyButton.onclick = function(){
         // for(i = 0; i < points.length; i++){
         //     points[i].draw();
         // }
-    },1000/30);
+    },1000/120);
 }
 
