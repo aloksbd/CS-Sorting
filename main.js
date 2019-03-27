@@ -37,18 +37,13 @@ for(i = 0; i < points.length; i++){
 
 readyButton.onclick = function(){
     console.log('start');
-    var bub = InsertionSort(points)
+    // var bub = BubbleSort(points);
+    // var ins = InsertionSort(points);
+    var sel = SelectionSort(points);
     setInterval(function(){
-        console.log('....................',points.length);
-        bub.update();
-
-        // for(i = 0; i < points.length; i++){
-        //     points[i].draw();
-        //     console.log(points[i].r,points[i].color);
-        // }
-        // for(i = 0; i < points.length; i++){
-        //     points[i].draw();
-        // }
+        // bub.update();
+        // ins.update();
+        sel.update();
     },1000/120);
 }
 
