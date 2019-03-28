@@ -39,11 +39,13 @@ readyButton.onclick = function(){
     console.log('start');
     // var bub = BubbleSort(points);
     // var ins = InsertionSort(points);
-    var sel = SelectionSort(points);
+    // var sel = SelectionSort(points);
+    var mer = MergeSort(points);
     setInterval(function(){
         // bub.update();
         // ins.update();
-        sel.update();
+        // sel.update();
+        mer.update();
     },1000/120);
 }
 
